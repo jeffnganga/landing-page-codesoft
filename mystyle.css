@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    outline: none;
+}
+
+:root{
+    --text-color: #ebae08;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 100px;
+    border-bottom: 1px solid transparent;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    display: none;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   }
+  .sidebar li{
+  width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+  }
+  .menu-button{
+    display: none;
+  }
+  
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+
+  @media(max-width: 400px){
+    .sidebar{
+     width: 100%;
+    }
+}     
+
+.hed{
+   font-size: 20px;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: "Sofia", sans-serif;
+   color: beige;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    font-size: 25px;
+    margin: 0 40px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.navlist a:hover{
+    color: rgb(255, 174, 0);
+}
+
+.landpage{
+    background:linear-gradient(rgba(255, 242, 223, 0.5), rgba(253, 235, 255, 0.5)), url(image/countryside-1846093_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin-top: 54px;
+    background-position: center;
+    align-items: center;
+    display: flex;
+}
+
+.ajay{
+   justify-content: center;
+   align-items: center;
+   max-width:61ws0px;
+   margin-left: 54px;
+}
+.mr{
+   font-size: 27px; 
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #333;
+   margin-top: 34px;
+}
+
+.sp{
+   color: #ebae08; 
+}
+
+.btn{
+    font-size: 20px;
+    margin-top: 16px;
+    background-color:transparent;
+    border: 2px solid #333;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.btn:hover{
+    color:#333 ;
+    background-color: #ebae08;
+    border: #ebae08;
+}
+
+.search{
+    background-color: #bd700c;
+    padding: 40px 180px;
+}
+.sach{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.input{
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 300px; 
+    padding: 10px;
+    margin-right: 10px;
+}
+.btn1{
+    font-size: 23px;
+    background-color: #141414;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .input {
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn1 {
+        width: 80%;
+    }
+}
+
+.about{
+    background-color: #333;
+    padding: 40px 140px;
+    color: #ffffff;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ab1{
+   text-align: center;
+   font-size: 33px;
+   font-weight: bold;
+   margin-bottom: 30px;
+}
+.ab1:hover{
+    color: #bd700c;
+    text-decoration-line: underline;
+}
+
+.image{
+   flex: 1;
+   margin-right: 20px;
+   border-radius:30px;
+   max-width: 100%;
+   height: auto;
+ 
+}
+.image img{
+    
+    transition: transform 0.3s ease;
+}
+
+image:hover img{
+    transform: scale(1.1);
+}
+
+.ab2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ab3{
+  flex: 1;
+  margin-left: 20px;
+  padding: 0 20px;
+}
+
+.ab3 p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width:768px){
+    .about-content{
+        flex-direction: column;
+    }
+    .image, .ab3{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .sach{
+        flex-direction: column;
+    }
+    .ab2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        max-width: 120%;
+    }
+
+    .ab3 {
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+
